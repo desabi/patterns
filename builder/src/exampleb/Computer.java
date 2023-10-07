@@ -30,6 +30,16 @@ public class Computer {
         return isBluetoothEnabled;
     }
 
+    @Override
+    public String toString() {
+        return "Computer{" +
+                "HDD='" + HDD + '\'' +
+                ", RAM='" + RAM + '\'' +
+                ", isGraphicsCardEnabled=" + isGraphicsCardEnabled +
+                ", isBluetoothEnabled=" + isBluetoothEnabled +
+                '}';
+    }
+
     public static class Builder {
 
         // required parameters
